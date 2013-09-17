@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Wei随享</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_message">MessageActivity</string>
+    <string name="title_activity_option">OptionActivity</string>
+    <string name="title_activity_about">AboutActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_statuses">StatusesActivity</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="title_activity_aaamain">AAAMainActivity</string>
+    <string name="title_activity_send_statuses">SendStatusesActivity</string>
+    <string name="title_activity_comment">CommentActivity</string>
+    <string name="title_activity_followers">FollowersActivity</string>
+    <string name="title_activity_friends">FriendsActivity</string>
+    <string name="title_activity_my_statuses">MyStatusesActivity</string>
+
+</resources>
