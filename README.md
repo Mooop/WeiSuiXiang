@@ -4,3 +4,7 @@ WeiSuiXiang
 
 调用微博API返回json数据，使用多线程解析json数据，使用imageloder加载大量网络图片。
 暂时大概是这么多。。。o(╯□╰)o
+
+===========
+2013-10
+引入全新UI，采用侧滑式菜单栏，利用Fragment组合UI 
