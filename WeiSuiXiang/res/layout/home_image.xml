@@ -16,16 +16,23 @@
             android:layout_width="45dip"
             android:layout_height="45dip"
             android:layout_weight="0"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="5dip"
             android:src="@drawable/ic_launcher" />
 
         <TextView
             android:id="@+id/screen_name"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginLeft="5dip"
             android:text="Medium Text"
             android:gravity="bottom"
             android:layout_weight="0"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="5dip"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
     </LinearLayout>
@@ -36,6 +43,7 @@
         android:layout_marginLeft="10dip"
         android:layout_marginRight="10dip"
         android:layout_marginTop="10dip"
+        android:layout_marginBottom="10dip"
         android:orientation="vertical" >
 
         <TextView
@@ -43,12 +51,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Small Text"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="5dip"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <ImageView
             android:id="@+id/pic1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="5dip"
             android:src="@drawable/ic_launcher" />
 
         <TextView
@@ -56,12 +71,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Small Text"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="5dip"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <ImageView
             android:id="@+id/pic2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
             android:src="@drawable/ic_launcher" />
 
         <TextView
@@ -69,6 +89,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Small Text"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
             android:textAppearance="?android:attr/textAppearanceSmall" />
 
     </LinearLayout>

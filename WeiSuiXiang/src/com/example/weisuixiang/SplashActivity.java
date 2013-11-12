@@ -1,19 +1,17 @@
 package com.example.weisuixiang;
 
+import com.example.weisuixiang.R;
+import com.util.AccessTokenKeeper;
 import com.weibo.sdk.android.Oauth2AccessToken;
-import com.weibo.sdk.android.keep.AccessTokenKeeper;
-
 import android.os.Bundle;
 import android.os.Handler;
 import android.app.Activity;
 import android.content.Intent;
-import android.content.res.Configuration;
-import android.view.Menu;
 import android.view.Window;
 
 public class SplashActivity extends Activity {
 
-	private final int SPLASH_DISPLAY_LENGHT = 3000;
+	private final int SPLASH_DISPLAY_LENGHT = 1000;
 	public static Oauth2AccessToken accessToken;
 	
 	@Override
@@ -23,17 +21,17 @@ public class SplashActivity extends Activity {
 		setContentView(R.layout.splash);
 		
 		//读取保存再sharepreference的accesstoken
-		SplashActivity.accessToken = AccessTokenKeeper.readAccessToken(this);
-		
+	    accessToken = AccessTokenKeeper.readAccessToken(this);
+	
 		new Handler().postDelayed(new Runnable(){
 			@Override
 			public void run() {
-				//若accesstoken有效
-				if (SplashActivity.accessToken.isSessionValid()) {
-					Intent mainIntent = new Intent(SplashActivity.this,MainActivity.class);
+				//accessToken有效则跳转
+				if(accessToken.isSessionValid()){
+					Intent mainIntent = new Intent(SplashActivity.this,HomeActivity.class);
 					SplashActivity.this.startActivity(mainIntent);
 					SplashActivity.this.finish();
-				}else{//否则
+				}else{
 					Intent mainIntent = new Intent(SplashActivity.this,LoginActivity.class);
 					SplashActivity.this.startActivity(mainIntent);
 					SplashActivity.this.finish();
@@ -41,5 +39,5 @@ public class SplashActivity extends Activity {
 				
 				}
 			}, SPLASH_DISPLAY_LENGHT);
-		}
 	}
+}

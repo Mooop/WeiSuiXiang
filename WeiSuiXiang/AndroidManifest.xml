@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.weisuixiang"
     android:versionCode="1"
-    android:versionName="1.1" >
+    android:versionName="1.0" >
 
     <uses-sdk
         android:minSdkVersion="8"
@@ -10,20 +10,18 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STATE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
-        android:name="com.weibo.Utill.MyApplication"
+        android:name="com.util.MyApplication"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
             android:name="com.example.weisuixiang.SplashActivity"
-            android:label="@string/app_name"
-            android:screenOrientation="portrait"
-            android:theme="@style/concealTitle" >
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -31,69 +29,20 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.weisuixiang.MainActivity"
-            android:label="@string/title_activity_main"
-            android:screenOrientation="portrait" >
-        </activity>
-        <activity
             android:name="com.example.weisuixiang.HomeActivity"
-            android:label="@string/title_activity_home"
-            android:screenOrientation="portrait" >
-        </activity>
-        <activity
-            android:name="com.example.weisuixiang.MessageActivity"
-            android:label="@string/title_activity_message"
-            android:screenOrientation="portrait" >
-        </activity>
-        <activity
-            android:name="com.example.weisuixiang.OptionActivity"
-            android:label="@string/title_activity_option"
-            android:screenOrientation="portrait" >
-        </activity>
-        <activity
-            android:name="com.example.weisuixiang.AboutActivity"
-            android:label="@string/title_activity_about"
-            android:screenOrientation="portrait" >
+            android:label="@string/title_activity_home" >
         </activity>
         <activity
             android:name="com.example.weisuixiang.LoginActivity"
-            android:label="@string/title_activity_login"
-            android:screenOrientation="portrait" >
-        </activity>
-        <activity
-            android:name="com.example.weisuixiang.StatusesActivity"
-            android:label="@string/title_activity_statuses"
-            android:screenOrientation="portrait" >
-        </activity>
-        <activity
-            android:name="com.example.weisuixiang.TestActivity"
-            android:label="@string/title_activity_test"
-            android:screenOrientation="portrait" >
+            android:label="@string/title_activity_login" >
         </activity>
         <activity
             android:name="com.example.weisuixiang.SendStatusesActivity"
-            android:label="@string/title_activity_send_statuses"
-            android:screenOrientation="portrait" >
+            android:label="@string/title_activity_send_statuses" >
         </activity>
         <activity
-            android:name="com.example.weisuixiang.CommentActivity"
-            android:label="@string/title_activity_comment"
-            android:screenOrientation="portrait" >
-        </activity>
-        <activity
-            android:name="com.example.weisuixiang.FollowersActivity"
-            android:label="@string/title_activity_followers"
-            android:screenOrientation="portrait" >
-        </activity>
-        <activity
-            android:name="com.example.weisuixiang.FriendsActivity"
-            android:label="@string/title_activity_friends"
-             android:screenOrientation="portrait" >
-        </activity>
-        <activity
-            android:name="com.example.weisuixiang.MyStatusesActivity"
-            android:label="@string/title_activity_my_statuses"
-            android:screenOrientation="portrait" >
+            android:name="com.example.weisuixiang.StatusesActivity"
+            android:label="@string/title_activity_statuses" >
         </activity>
     </application>
 
